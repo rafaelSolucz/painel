@@ -49,7 +49,7 @@ body {
     height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-02);
-    overflow: hidden;
+    overflow: hidden; /*ver se mantém ou apaga*/
 }
 
 /* Estilo para a linha horizontal (divisor) */
@@ -304,6 +304,7 @@ body.dark .switch::before {
     width: calc(100% - 250px);
     padding: 60px;
     transition: var(--tran-05);
+    overflow-y: auto; /* <-- ADICIONE ESTA LINHA */
 }
 
 .sidebar.close ~ .conteudo {

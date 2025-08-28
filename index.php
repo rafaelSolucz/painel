@@ -8,6 +8,7 @@ session_start();
 use App\Controller\AuthController;
 use App\Controller\DashboardController;
 use App\Controller\UsuarioController; // Conferir de que esta linha existe
+use App\Controller\AdminDashboardController;
 
 require_once("./autoload.php");
 ?>
@@ -38,6 +39,7 @@ require_once("./autoload.php");
         "logout" => AuthController::logout(),
         "dashboards" => DashboardController::displayDashboards(), // Adicionei esta linha
         "admin_usuarios" => UsuarioController::manageUsers($action),
+        "admin_dashboards" => AdminDashboardController::manageDashboards($action),
         default => require_once("./view/404.php"),
     };
     ?>
