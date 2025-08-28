@@ -511,3 +511,55 @@ table {
     border: 1px solid var(--hr-color);
     border-radius: 8px;
 }
+
+/* ===== 7. Estilos de Feedback e Admin ===== */
+
+/* Mensagens de Feedback */
+.feedback {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.feedback.sucesso {
+    background-color: #28a745; /* Verde */
+}
+
+.feedback.erro {
+    background-color: #dc3545; /* Vermelho */
+}
+
+.feedback.aviso {
+    background-color: #ffc107; /* Amarelo */
+    color: #18191A;
+}
+
+
+/* Botões de Ação na Tabela */
+.styled-table .btn-editar,
+.styled-table .btn-excluir {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.styled-table .btn-editar{
+    background-color: #007bff; /* Azul */
+}
+
+.styled-table .btn-excluir {
+    background-color: #dc3545; /* Vermelho */
+}
+
+.styled-table .btn-editar:hover {
+    background-color: #0056b3;
+}
+
+.styled-table .btn-excluir:hover {
+    background-color: #c82333;
+}

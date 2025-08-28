@@ -68,6 +68,29 @@
             </ul>
         </div>
         <hr>
+
+        <!-- NOVO BLOCO PARA O MENU ADMIN -->
+        <?php  ?>
+        <?php if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin') : ?>
+            <div class="menu">
+                <ul class="nav-links">
+                    <li>
+                        <div class="submenu">
+                            <a href="#">
+                                <i class='bx bx-cog icon'></i>
+                                <span class="link-name">Configuração</span>
+                            </a>
+                            <i class="bx bxs-chevron-down arrow"></i>
+                        </div>
+                        <ul class="submenu-itens">
+                            <li><a href="?p=admin_usuarios">Usuários</a></li>
+                            <li><a href="?p=admin_dashboards">Dashboards</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        <?php endif; ?>
+
         <div class="bottom-content">
             <li class="mode">
                 <div class="icon-moon">

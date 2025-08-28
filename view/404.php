@@ -1,1 +1,1 @@
-<h1> ERRO 404 </1
+<h1> 404 – Arquivo ou diretório não encontrado </1
