@@ -66,6 +66,11 @@ h1 {
     color: var(--title-color);
 }
 
+h3 {
+    color: var(--title-color);
+    font-weight: 500;
+}
+
 p {
     color: var(--text-color);
 }
@@ -199,6 +204,18 @@ p {
 .sidebar .nav-links li .submenu.active-submenu a,
 .sidebar .nav-links li .submenu.active-submenu i {
     color: var(--sidebar-color);
+}
+
+/* Estilo aba ativa submenu*/
+.sidebar .submenu-itens .active {
+    background-color: var(--primary-color-light);
+    margin-left: 10px;
+    border-radius: 6px;
+}
+
+.sidebar .submenu-itens .active a {
+    color: var(--title-color);
+    padding-left: 20px;
 }
 
 /* Efeito hover nos itens da Sidebar */
@@ -525,16 +542,24 @@ table {
 }
 
 .feedback.sucesso {
-    background-color: #28a745; /* Verde */
+    background-color: #d4edda;
+    p {
+        color: #155724;
+    }
 }
 
 .feedback.erro {
-    background-color: #dc3545; /* Vermelho */
+    background-color: #f8d7da;
+    p {
+        color: #721c24;
+    }
 }
 
 .feedback.aviso {
-    background-color: #ffc107; /* Amarelo */
-    color: #18191A;
+    background-color: #fff3cd;
+    p {
+        color: #856404;
+    }
 }
 
 
@@ -550,11 +575,11 @@ table {
 }
 
 .styled-table .btn-editar{
-    background-color: #007bff; /* Azul */
+    background-color: #007bff;
 }
 
 .styled-table .btn-excluir {
-    background-color: #dc3545; /* Vermelho */
+    background-color: #dc3545;
 }
 
 .styled-table .btn-editar:hover {

@@ -5,7 +5,7 @@
         $isEditing = isset($dashboardParaEditar) && $dashboardParaEditar !== null;
         $formAction = $isEditing ? 'editar' : 'criar';
         $formTitle = $isEditing ? 'Editar Dashboard' : 'Adicionar Novo Dashboard';
-        $buttonText = $isEditing ? 'Salvar Alterações' : 'Adicionar';
+        $buttonText = $isEditing ? 'Salvar' : 'Adicionar';
     ?>
 
     <h1>Gerenciamento de Dashboards</h1>

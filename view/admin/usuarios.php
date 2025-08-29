@@ -7,7 +7,7 @@
         $isEditing = isset($usuarioParaEditar) && $usuarioParaEditar !== null;
         $formAction = $isEditing ? 'editar' : 'criar';
         $formTitle = $isEditing ? 'Editar Usuário' : 'Adicionar Novo Usuário';
-        $buttonText = $isEditing ? 'Salvar Alterações' : 'Adicionar';
+        $buttonText = $isEditing ? 'Salvar' : 'Adicionar';
     ?>
 
     <h1>Gerenciamento de Usuários</h1>
